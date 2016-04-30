@@ -27,7 +27,7 @@ Project managed, architected and led development of a government employee direct
 - Clearly specified requirements based on customer workshops, pushing back features which add difficulty but not value. Involved the team early in the requirements review process to gain accurate estimates and avoid technical surprises.
 - Dealt with difficulty in securing development staff by re-negotiating existing client contracts, altering &amp; simplifying technology choices to mainstream frameworks to reduce contention with other projects. This limited us to jQuery &amp; Deloitte internal frameworks rather than AngularJS.
 - Choreographed release management with other application streams within the Identity Hub by producing release roadmaps &amp; schedules, planning code branch merging strategy and working with other team leads to resolve conflicting schedules.
-- Instituted use of apiblueprint - API Documentation markup. Produced a set of open-source projects to allow code generation of SpringMVC models and controllers from apiblueprint files during maven build. This tight integration reduces boilerplate code generation and provides the guarantee that the documentation matches the code.
+- Instituted use of apiblueprint - API Documentation mark-up. Produced a set of open-source projects to allow code generation of SpringMVC models and controllers from apiblueprint files during maven build. This tight integration reduces boilerplate code generation and provides the guarantee that the documentation matches the code.
 - Performed development of the integration layer, utilizing previously created JMS and JSON API endpoints.
 - Presented successful demos of the project during various states of development to senior government stakeholders.
 
@@ -38,9 +38,9 @@ Designed, architected and led development of the company's flagship product "Ide
 - Designed and developed proof of concept application using a modern web stack (AngularJS 1.3, KendoUI, RESTful JSON services using Java Spring Boot) to be an easily customizable, accessible (WCAG 2.0 AA) and user friendly portal in front of Oracle Identity Management applications.
 - Led a team of developers and acted as overall applications architect on the final build, which consisted of 3 teams. My primary role was to create the technical design and ensure that it was implemented effectively by the various teams, which included creation of clear and succinct requirements, conducting code reviews, interviewing &amp; recruitment, making product and framework choices.
 - Prototyped, designed and developed highly-available distributed JMS messaging queues &amp; topics using Oracle Weblogic to avoid a monolithic design, facilitating independent operation of each of the 8 (and growing) applications.
-  - ooThe goal was to meet the client's uptime and performance service level agreement.
-  - ooReduced deployment system downtime when deploying non-business functionality from 10 minutes to zero, and 'business critical functionality' downtime resulting from a total systems restart from 4 hours to under 10 minutes.
-  - ooAvoided the need to use JTA (Distributed Transactions) by first storing message sends in a database queue, then enforcing the idempotent design principle on all JMS event handlers. This provides the additional integrity benefit of no message loss when the JMS cluster is inoperable, and no business behavior duplication if the send queue encounters a crash &amp; recovery scenario.
+  - The goal was to meet the client's uptime and performance service level agreement.
+  - Reduced deployment system downtime when deploying non-business functionality from 10 minutes to zero, and 'business critical functionality' downtime resulting from a total systems restart from 4 hours to under 10 minutes.
+  - Avoided the need to use JTA (Distributed Transactions) by first storing message sends in a database queue, then enforcing the idempotent design principle on all JMS event handlers. This provides the additional integrity benefit of no message loss when the JMS cluster is inoperable, and no business behaviour duplication if the send queue encounters a crash &amp; recovery scenario.
 - Advocated use of and created developer continuous integration (CI) and automated deployment pipeline using GIT, Maven, Grunt, NPM, Bower, Jenkins and Artifactory. The result was a reduction in deployment time, auditable Production &amp; UAT deployment and faster issue resolution through immediate notification of test failures in Slack.
 - Identified tedious and error prone business processes in the Support Team, so designed and created an administration console using NodeJS/Express/AngularJS to automate the manual tasks.
 
@@ -111,7 +111,7 @@ _Epiphany Games (NSW, Australia)_
 Started as the sole technical employee joining the company at its inception and as such created the initial product set:
 
 -  **Emotion based artificial intelligence proof of concept** - a playable game demo to demonstrate a patent application that I co-authored with the other company founders. Built as a total conversion mod of Unreal engine, it demonstrated 'emotion based' decision making in non-player game actors by varying allegiance, skill and pro-activity based on past events.
--  **NICTA movement learning AI: graphical engine -** developed a C++ library for an external application (AI simulation) giving it direct control over a scene rendered by the Unreal Engine, running in a separate process. This allowed the National ICT Australia (NICTA) team to legally use the advanced tooling packaged with the commercial graphics engine, without the expensive licensing.
+-  **NICTA movement learning AI: graphical engine** - developed a C++ library for an external application (AI simulation) giving it direct control over a scene rendered by the Unreal Engine, running in a separate process. This allowed the National ICT Australia (NICTA) team to legally use the advanced tooling packaged with the commercial graphics engine, without the expensive licensing.
 
 
 
