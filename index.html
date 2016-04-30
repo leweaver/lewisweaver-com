@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>Lewis Weaver</title>
+
+<xmp theme="united" style="display:none;">
+# At a glance
+Lead Developer, currently working in Enterprise Applications at Deloitte Australia. This primarily involves anything with a Java or Oracle flavour. Outside of work, I contribute to many projects (both open and closed source) ranging from NodeJS to C++, including everything in-between. My work history has been focused on both Desktop and Web applications; using C++, C#.NET, Java  &amp; AngularJS.
+
+Keen sailor who competes at the national level and aspires to complete the Sydney to Hobart race, who plays the Japanese Taiko drum.
+
+![Boat Picture](melges32.png "Me as a red ghost on a Melges 32.") 
+
+# Contact
+In the interests of keeping botnet's at bay, I have chosen not to reveal contact details here. Please get in touch via my [linkedin](https://au.linkedin.com/in/lewis-weaver-b62bb61) page.
+
+
+# Professional History
+
+**Lead Developer &amp; Architect** Jun 2014 - Present
+_Dataweave (NSW, Australia)_
+
+**Identity Hub People-Search, NSW Government - Public Service Commission**
+
+Project managed, architected and led development of a government employee directory, fully integrated with the Identity Hub.
+
+- Provided technical oversight and direction by researching, making and justifying technology choices. Ensured code quality by performing code reviews and verifying that the team was sufficiently confident and skilled in the tasks I assigned to them.
+- Clearly specified requirements based on customer workshops, pushing back features which add difficulty but not value. Involved the team early in the requirements review process to gain accurate estimates and avoid technical surprises.
+- Dealt with difficulty in securing development staff by re-negotiating existing client contracts, altering &amp; simplifying technology choices to mainstream frameworks to reduce contention with other projects. This limited us to jQuery &amp; Deloitte internal frameworks rather than AngularJS.
+- Choreographed release management with other application streams within the Identity Hub by producing release roadmaps &amp; schedules, planning code branch merging strategy and working with other team leads to resolve conflicting schedules.
+- Instituted use of apiblueprint - API Documentation markup. Produced a set of open-source projects to allow code generation of SpringMVC models and controllers from apiblueprint files during maven build. This tight integration reduces boilerplate code generation and provides the guarantee that the documentation matches the code.
+- Performed development of the integration layer, utilizing previously created JMS and JSON API endpoints.
+- Presented successful demos of the project during various states of development to senior government stakeholders.
+
+**Identity Hub, NSW Government - Public Service Commission**
+
+Designed, architected and led development of the company's flagship product "Identity Hub Portal" - an Identity Management platform with 400,000 users.
+
+- Designed and developed proof of concept application using a modern web stack (AngularJS 1.3, KendoUI, RESTful JSON services using Java Spring Boot) to be an easily customizable, accessible (WCAG 2.0 AA) and user friendly portal in front of Oracle Identity Management applications.
+- Led a team of developers and acted as overall applications architect on the final build, which consisted of 3 teams. My primary role was to create the technical design and ensure that it was implemented effectively by the various teams, which included creation of clear and succinct requirements, conducting code reviews, interviewing &amp; recruitment, making product and framework choices.
+- Prototyped, designed and developed highly-available distributed JMS messaging queues &amp; topics using Oracle Weblogic to avoid a monolithic design, facilitating independent operation of each of the 8 (and growing) applications.
+  - ooThe goal was to meet the client's uptime and performance service level agreement.
+  - ooReduced deployment system downtime when deploying non-business functionality from 10 minutes to zero, and 'business critical functionality' downtime resulting from a total systems restart from 4 hours to under 10 minutes.
+  - ooAvoided the need to use JTA (Distributed Transactions) by first storing message sends in a database queue, then enforcing the idempotent design principle on all JMS event handlers. This provides the additional integrity benefit of no message loss when the JMS cluster is inoperable, and no business behavior duplication if the send queue encounters a crash &amp; recovery scenario.
+- Advocated use of and created developer continuous integration (CI) and automated deployment pipeline using GIT, Maven, Grunt, NPM, Bower, Jenkins and Artifactory. The result was a reduction in deployment time, auditable Production &amp; UAT deployment and faster issue resolution through immediate notification of test failures in Slack.
+- Identified tedious and error prone business processes in the Support Team, so designed and created an administration console using NodeJS/Express/AngularJS to automate the manual tasks.
+
+**Lead Developer &amp; Architect** Dec 2012 - Jun 2014
+_Dataweave (NSW, Australia)_
+
+**VMoneyWeb, NSW Government - HealthShare/eHealth**
+
+- After identifying technical design flaws in the existing JSP application that were the primary cause of heavy negative user feedback, I successfully proposed and drove a complete re-development project.
+- Created and demonstrated a proof of concept application to stakeholders and other technical leads to ensure that the system fit in the broad agency technical plan and fit business requirements.
+- Led a team of 4 other developers to start and complete the redevelopment effort, using Java EE (Spring and Hibernate), KendoUI and AngularJS 1.3. This architecture was designed to better suit unreliable, high latency and low bandwidth network connections that many non-urban hospitals must endure.
+- As the lead developer, I was responsible for ensuring code quality (via peer code review), providing technical guidance and issue resolution, coding standards and direction as well as creating the core application framework.
+- Dealt with underperforming team members by providing positive and increasingly stern feedback, setting clear and achievable goals, providing technical coaching and encouraging self-education. Volunteered to become more involved in the hiring process (writing and conducting interview questions/coding exams) which prevented further inappropriate hires.
+- Ran workshops with end users (NSW Health Staff) to gather feedback and refine the user interface. and stakeholders and output a full technical design.
+- I instituted and drove Agile project management which included running standups, leading 'planning poker' estimation sessions, creating, assigning and tracking tasks.
+- Suggested and ran incremental go-live, rather than big-bang, to minimize risk of unexpected systems failures and provide a seamless and instant roll-back plan. Go-live was successful, with resoundingly positive feedback from users.
+
+**Lead Game Developer** Mar 2010 - Apr 2011
+_Epiphany Games (NSW, Australia)_
+
+**Frozen Hearth Game Demo (C++)**
+
+- Team lead for 4 developers
+- Produced requirements, resolved complex design issues, developed core features, formulated and assigned tasks, communicated with managers on progress.
+- Created a playable, networked game demo on top of the in-house game engine, which was the culmination of my previous projects.
+- Developed real-time strategy AI including a bespoke decision engine, squad-based movement and commands. Integrated the _Xaitment_ nav-mesh engine (xaitMap).
+- Presented the game demo along with the CEO at the Game Developers Conference (GDC - San Francisco) in 2011 at over 20 private publisher meetings, successfully securing a publisher contract. This empowered the company to continue developing the game to its completion.
+
+**Researcher &amp; Lead Engine Developer** Apr 2007 - Mar 2010
+_Epiphany Games (NSW, Australia)_
+
+**Primary responsibilities**
+
+- Researched then developed key rendering and game engine features, allowing the company to grow and license its intellectual property.
+- Led a team of 4 other engine developers by providing a technical direction and mentoring, implementing the core engine framework and components, joining and resolving technical debates, making technology choices.
+- Planned future product roadmap based on budget, time and other teams project requirements.
+
+**Terrain engine (C++, HLSL, GLSL)**
+_A 'large world environment engine'_:
+
+- Iteratively researched, created and evaluated prototypes based on SOAR, Voxel, Cell level-of-detail (LOD) techniques.
+- Designed final implementation of aforementioned research using a hybrid approach, after determining that Voxel and Cell LOD made better use of modern GPU features whereas SOAR is bound to CPU performance. Built in Gamebryo using C++, DirectX 9 and HLSL/GLSL.
+- Designed and created dynamic material engine to be applied on a per-cell basis, to overcome the normal 4-layer limitation of the 'texture splatting' technique. This granted the terrain engine effectively unlimited texture layers, with 'paintbrush' style artist tooling, at an (artist-adjustable) cost of texture resolution (1 - 2% reduction).
+- Created quadtree occlusion culling engine, with support for level of detail, border stitching and vertex morphing. Performed majority of the calculation in a vertex shader to avoid constant GPU buffer streaming. Devised a method to support both 2D and 3D camera distance calculation so that the screen space to vertex ratio to remains constant, which reduces the memory required for visible mesh geometry when camera is at high relative altitude.
+- Researched and developed a cell based GPU instanced geometry rendering engine to enable animated grass, debris or arbitrary assets to be randomly placed on the terrain surface. Full integration with the aforementioned texture splatting, LOD and occlusion engine granted artists 'painting' tools for decoration layers on the world surface.
+- Implemented task-based data loading &amp; processing engine, with multiple worker threads, to enable background disk paging, LOD calculation and instanced geometry position calculation, with minimal impact to frame rate. Included a priority system, which supported arbitrarily fast camera movement without 'gaps' in the rendered world. Vertex morphing engine introduced a smooth transition as LOD's are loaded, which prevents visual 'popping'.
+- Led design workshops with target user base (artists) and business stakeholders by driving requirements gathering and defining scope based on technical and budget limitations. This provided the foundation for the business' costing and resource plans for the project.
+- Created C++ managed extensions services and wrappers so that the engine can embedded within a C#.NET tooling application. Developed and exposed hooks and data processing methods as a basis for tools developers to create an integration.
+
+**PSSM Shadowing &amp; Lighting Upgrades (C++, HLSL, GLSL)**
+
+- Researched shadowing techniques and created prototypes based on published articles and current research, with the goal of enabling shadow rendering upon a large scale, dynamically loaded world within the Gamebryo engine (which had an outdated shadowing engine).
+- Chose and implemented PSSM shadowing technique (a variant of cascading shadow mapping) as it produced stable, fast and high quality shadows.
+- Researched and implemented a shadow rendering frustum position offset technique to eliminate shadow 'shimmering' as the viewport moves, which greatly improved the visual quality.
+- Invented and implemented a blending method to smooth the transition borders between LOD's with minimal performance impact: no extra shader buffers, texture maps or texture lookups required.
+
+**Peer to peer lock-step game logic engine (C++)**
+
+- Designed and created a lock-step peer-to-peer networking and game logic engine, to drive the core gameplay aspects of a future project. Dealt with initial handshake and dropouts using a time limited quorum voting technique, which provided robust and stable failure case handling.
+- Implemented a self-tuning algorithm that adjusted the number of 'steps' per 'turn' to handle slow clients (either slow network, or frame rate). This solved a 'sync locking' issue, where fast clients constantly waited for slow clients.
+- Identified the difficulty reproducing multiplayer game bugs, so proposed and created a 'replay' system early in the project which stores all game action data in a log file. This enabled the team to reproduce and easily debug multiplayer game issues by simply replaying the file, greatly reducing development difficulty.
+- Designed and implemented NAT punch-through client and server, to allow clients behind connections with NAT to establish peer-to-peer sessions. Included support for clients within the same NAT zone (i.e., same home network).
+- Evaluated scripting languages, chose and implemented LUA game logic abstraction layer using LUA C++ bindings to offer a drastically simpler interface for artists, game designers and level developers to create content and tweak game logic, with little coding experience. This relieved work pressure on the core development team in the long run.
+
+**Developer** May 2005 - Apr 2007
+_Epiphany Games (NSW, Australia)_
+
+Started as the sole technical employee joining the company at its inception and as such created the initial product set:
+
+-  **Emotion based artificial intelligence proof of concept** - a playable game demo to demonstrate a patent application that I co-authored with the other company founders. Built as a total conversion mod of Unreal engine, it demonstrated 'emotion based' decision making in non-player game actors by varying allegiance, skill and pro-activity based on past events.
+-  **NICTA movement learning AI: graphical engine -** developed a C++ library for an external application (AI simulation) giving it direct control over a scene rendered by the Unreal Engine, running in a separate process. This allowed the National ICT Australia (NICTA) team to legally use the advanced tooling packaged with the commercial graphics engine, without the expensive licensing.
+
+
+
+# Education
+
+**Bachelor of Computer Science and Technology**
+
+_University of Sydney, Australia_
+
+# Patents
+
+"An artificial intelligence system and method", _Weaver, Lewis; Lee, Damien; Lean, Morgan;_ Aus. Patent Pending 2007242931, December 12, 2007
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</html>
