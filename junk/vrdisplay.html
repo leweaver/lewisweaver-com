@@ -1,0 +1,80 @@
+
+
+<html>
+
+<head>
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+<script>
+
+    navigator.getVRDisplays().then(function (displays) {
+
+      if (displays.length > 0) {
+
+        vrDisplay = displays[0];
+
+ 
+
+        var formData = new FormData();
+
+ 
+
+        var canvas = document.createElement('canvas');
+
+        canvas.width = 400;
+
+        canvas.height = 400;
+
+ 
+
+        vrDisplay.requestPresent([{ source: canvas }]).then(function() {
+
+            console.log("requestPresent with valid source completed the promise. (sanity check)");
+
+        }, function() {
+
+            console.log("requestPresent with valid source rejected the promise. (sanity check)");
+
+        });
+
+ 
+
+        vrDisplay.requestPresent([{ source: formData }]).then(function() {
+
+            console.log("requestPresent with invalid source completed the promise.");
+
+        }, function() {
+
+            console.log("requestPresent with invalid source rejected the promise.");
+
+        });
+
+ 
+
+        vrDisplay.requestPresent([{ source: canvas, leftBounds: [0.0, 0.0, 0.5, 1.0], rightBounds: [0.5, 0.0, 0.5, 1.0] }]).then(function() {
+            console.log("requestPresent with valid bounds completed the promise. (sanity check)");
+        }, function() {
+            console.log("requestPresent with valid bounds rejected the promise. (sanity check)");
+        });
+
+        vrDisplay.requestPresent([{ source: canvas, leftBounds: [2.0, 1.0, 0.5, 3.0], rightBounds: [3.0, 1.0, 1.5, 1.9] }]).then(function() {
+            console.log("requestPresent with invalid bounds completed the promise.");
+        }, function() {
+            console.log("requestPresent with invalid bounds rejected the promise.");
+        });
+ 
+      }
+      else {
+        console.log("No displays found.");
+      }
+   });
+</script>
+</body>
+</html>
